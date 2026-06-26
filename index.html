@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<link rel="stylesheet" href="main.css">
+
+<title>DÄGRÊÄT — Web Developer</title>
+</head>
+<body>
+ 
+<!-- ── NAV ── -->
+<nav>
+  <div class="wrap">
+    <div class="nav-inner">
+      <div class="logo"><span>//</span><span>Coder.</span>DAGREAT</div>
+      <ul class="nav-links">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-btn" id="themeToggle" title="Toggle theme" aria-label="Toggle light/dark mode">
+          <i class="ti ti-sun" id="themeIcon"></i>
+        </button>
+        <a href="#contact" class="nav-cta">Hire me</a>
+      </div>
+    </div>
+  </div>
+</nav>
+ 
+<!-- ── HERO ── -->
+<div class="wrap">
+  <div class="hero">
+    <div>
+      <div class="eyebrow">Available for freelance &amp; contracts</div>
+      <h1>I grow businesses through building things<br>for the <span class="a1">web</span> —<br>fast, clean &amp; <span class="a2">real</span>.</h1>
+      <p class="sub">
+        Web developer based in <strong>Delta, Nigeria</strong>. I turn ideas into polished digital products —
+        from landing pages to full-stack applications.
+      </p>
+      <div class="btns">
+        <a href="#projects" class="btn-p"><i class="ti ti-eye"></i> View my work</a>
+        <a href="#contact" class="btn-g"><i class="ti ti-send"></i> Get in touch</a>
+        <button class="btn-resume" onclick="downloadResume()"><i class="ti ti-download"></i> Download CV</button>
+      </div>
+    </div>
+ 
+    <div class="code-card">
+      <div class="card-dots">
+        <div class="dot" style="background:#FF5F57"></div>
+        <div class="dot" style="background:#FEBC2E"></div>
+        <div class="dot" style="background:#28C840"></div>
+        <span class="card-file">portfolio.js</span>
+      </div>
+      <pre><span class="kw">const</span> developer = {
+  name: <span class="str">"DAGREAT"</span>,
+  location: <span class="str">"Delta, NG 🇳🇬"</span>,
+  role: <span class="str">"Full-Stack Dev"</span>,
+  stack: [
+    <span class="str">"React"</span>,
+    <span class="str">"Next.js"</span>,
+    <span class="str">"Node.js"</span>,
+    <span class="str">"Tailwind CSS"</span>,
+  ],
+  <span class="fn">build</span>: (idea) <span class="kw">=&gt;</span> {
+    <span class="cm">// turns ideas → products</span>
+    <span class="kw">return</span> <span class="str">"something real"</span>;
+  }
+};</pre>
+      <div class="status">
+        <div class="pulse"></div>
+        Open to new opportunities
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<hr class="div">
+ 
+<!-- ── SKILLS ── -->
+<div class="wrap">
+  <section id="skills">
+    <p class="sec-label reveal">What I work with</p>
+    <p class="sec-title reveal">Skills &amp; technologies</p>
+    <div class="skills-grid">
+      <div class="sk reveal reveal-delay-1">
+        <div class="sk-icon"><i class="ti ti-layout" style="color:var(--accent)"></i></div>
+        <div class="sk-name">Frontend</div>
+        <div class="tags">
+          <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span>
+          <span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Tailwind CSS</span>
+        </div>
+      </div>
+      <div class="sk reveal reveal-delay-2">
+        <div class="sk-icon"><i class="ti ti-server" style="color:var(--accent2)"></i></div>
+        <div class="sk-name">Backend</div>
+        <div class="tags">
+          <span class="tag">Node.js</span>
+          <span class="tag">REST APIs</span><span class="tag">Java</span>
+        </div>
+      </div>
+      <div class="sk reveal reveal-delay-3">
+        <div class="sk-icon"><i class="ti ti-database" style="color:var(--code)"></i></div>
+        <div class="sk-name">Database &amp; tools</div>
+        <div class="tags">
+          <span class="tag">MongoDB</span><span class="tag">PostgreSQL</span>
+          <span class="tag">Git</span><span class="tag">Linux</span>
+        </div>
+      </div>
+      <div class="sk reveal reveal-delay-4">
+        <div class="sk-icon"><i class="ti ti-brush" style="color:#D4537E"></i></div>
+        <div class="sk-name">Design &amp; other</div>
+        <div class="tags">
+          <span class="tag">Figma</span><span class="tag">Responsive</span>
+          <span class="tag">UI/UX</span><span class="tag">SEO</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+ 
+<hr class="div">
+ 
+<!-- ── PROJECTS ── -->
+<div class="wrap">
+  <section id="projects">
+    <p class="sec-label reveal">What I've built</p>
+    <p class="sec-title reveal">Projects</p>
+    <div class="proj-grid">
+ 
+      <div class="proj ft reveal reveal-delay-1">
+        <span class="badge b-ft">✦ Featured</span>
+        <div class="proj-title">Student CGPA Calculator</div>
+        <div class="proj-desc">A web tool for 100-level Nigerian university students to calculate and track their GPA across courses and semesters. Clean UI, fast, no sign-up needed.</div>
+        <div class="tags" style="margin-bottom:16px">
+          <span class="tag">React</span><span class="tag">Tailwind</span><span class="tag">LocalStorage</span>
+        </div>
+        <div class="proj-links">
+          <a href=" https://chukzzydagreat.github.io/CGPA_Calculator/" class="pl"><i class="ti ti-external-link"></i> Live demo</a>
+          <a href="#" class="pl dim"><i class="ti ti-brand-github"></i> Source</a>
+        </div>
+      </div>
+ 
+      <div class="proj reveal reveal-delay-2">
+        <span class="badge b-live">● Live</span>
+        <div class="proj-title">Laptop Store Landing Page</div>
+        <div class="proj-desc">A conversion-focused landing page for a student-targeted laptop reselling business in Lagos. Drives WhatsApp inquiries via punchy, direct copy.</div>
+        <div class="tags" style="margin-bottom:16px">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Vanilla JS</span>
+        </div>
+        <div class="proj-links">
+          <a href="#" class="pl"><i class="ti ti-external-link"></i> View site</a>
+          <a href="#" class="pl dim"><i class="ti ti-brand-github"></i> Source</a>
+        </div>
+      </div>
+ 
+      <div class="proj reveal reveal-delay-3">
+        <span class="badge b-wip">⧖ In progress</span>
+        <div class="proj-title">Student Info Manager</div>
+        <div class="proj-desc">A console-based Java application for managing and querying student records. Built with OOP principles as part of CS coursework.</div>
+        <div class="tags" style="margin-bottom:16px">
+          <span class="tag">Java</span><span class="tag">OOP</span><span class="tag">CLI</span>
+        </div>
+        <div class="proj-links">
+          <a href="#" class="pl dim"><i class="ti ti-brand-github"></i> Source</a>
+        </div>
+      </div>
+ 
+      <div class="proj ft reveal reveal-delay-4">
+        <span class="badge b-ft">✦ Featured</span>
+        <div class="proj-title">This Portfolio</div>
+        <div class="proj-desc">Fully responsive personal developer portfolio. Designed from scratch — dark theme, code aesthetic, built to represent real work and real skills.</div>
+        <div class="tags" style="margin-bottom:16px">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Vanilla JS</span>
+        </div>
+        <div class="proj-links">
+          <a href="#" class="pl"><i class="ti ti-eye"></i> You're here</a>
+        </div>
+      </div>
+ 
+    </div>
+  </section>
+</div>
+ 
+<hr class="div">
+ 
+<!-- ── BLOG ── -->
+<div class="wrap">
+  <section id="blog">
+    <p class="sec-label reveal">Thoughts &amp; writing</p>
+    <p class="sec-title reveal">Articles</p>
+    <div class="blog-grid">
+ 
+      <div class="blog-card reveal reveal-delay-1">
+        <div class="blog-meta">
+          <span class="blog-cat">Web Dev</span>
+          <span class="blog-date">Jun 2025</span>
+        </div>
+        <div class="blog-title">How I built a CGPA calculator in a weekend — and what I learned</div>
+        <div class="blog-excerpt">A walkthrough of the decisions behind the student GPA tool, from data structure choices to making it feel fast without a backend.</div>
+        <div class="blog-footer">
+          <a href="#" class="blog-read"><i class="ti ti-arrow-right"></i> Read article</a>
+          <span class="blog-read-time">5 min read</span>
+        </div>
+      </div>
+ 
+      <div class="blog-card reveal reveal-delay-2">
+        <div class="blog-meta">
+          <span class="blog-cat">Career</span>
+          <span class="blog-date">May 2025</span>
+        </div>
+        <div class="blog-title">Freelancing as a CS student in Lagos: what nobody tells you</div>
+        <div class="blog-excerpt">The reality of landing your first client, setting prices in Naira, and building credibility before you even graduate.</div>
+        <div class="blog-footer">
+          <a href="#" class="blog-read"><i class="ti ti-arrow-right"></i> Read article</a>
+          <span class="blog-read-time">7 min read</span>
+        </div>
+      </div>
+ 
+      <div class="blog-card reveal reveal-delay-3">
+        <div class="blog-meta">
+          <span class="blog-cat">Tech</span>
+          <span class="blog-date">Apr 2025</span>
+        </div>
+        <div class="blog-title">Why I switched from Windows to Linux (Zorin OS) for development</div>
+        <div class="blog-excerpt">Performance, control, and cost — three reasons a Nigerian dev student ditched Windows and never looked back.</div>
+        <div class="blog-footer">
+          <a href="#" class="blog-read"><i class="ti ti-arrow-right"></i> Read article</a>
+          <span class="blog-read-time">4 min read</span>
+        </div>
+      </div>
+ 
+      <div class="blog-card reveal reveal-delay-4">
+        <div class="blog-meta">
+          <span class="blog-cat">Entrepreneurship</span>
+          <span class="blog-date">Mar 2025</span>
+        </div>
+        <div class="blog-title">Selling refurbished laptops to students: lessons from the hustle</div>
+        <div class="blog-excerpt">How running a side business taught me more about product-market fit and user psychology than any course I've taken.</div>
+        <div class="blog-footer">
+          <a href="#" class="blog-read"><i class="ti ti-arrow-right"></i> Read article</a>
+          <span class="blog-read-time">6 min read</span>
+        </div>
+      </div>
+ 
+    </div>
+  </section>
+</div>
+ 
+<hr class="div">
+ 
+<!-- ── ABOUT ── -->
+<div class="wrap">
+  <section id="about">
+    <p class="sec-label reveal">Who I am</p>
+    <p class="sec-title reveal">About me</p>
+    <div class="about-grid">
+      <div class="about-body reveal">
+        <p>
+          I'm <strong>Akporue Ochuko Great (DaGreat)</strong> — a Computer Science student and self-taught web developer
+          based in <strong>Delta, Nigeria</strong>. I started writing code out of genuine curiosity
+          and haven't stopped since.
+        </p>
+        <p>
+          Beyond the screen, I run a <strong>laptop reselling business</strong> targeting university
+          students — which sharpened my instincts for understanding users, communicating value clearly,
+          and building things people actually need.
+        </p>
+        <p>
+          I'm drawn to the intersection of <strong>clean engineering and real-world impact</strong>.
+          Every project I take on is built to solve something real — not just to look good on a screen.
+        </p>
+        <p class="hi">
+          Currently open to freelance projects, internships, and interesting problems.
+        </p>
+        <button class="btn-resume" onclick="downloadResume()" style="margin-top:8px">
+          <i class="ti ti-download"></i> Download my CV
+        </button>
+      </div>
+      <div class="stat-col">
+        <div class="stat reveal reveal-delay-1">
+          <div class="stat-n">4+</div>
+          <div class="stat-l">Years writing code</div>
+        </div>
+        <div class="stat reveal reveal-delay-2">
+          <div class="stat-n g">10+</div>
+          <div class="stat-l">Projects shipped</div>
+        </div>
+        <div class="stat reveal reveal-delay-3">
+          <div class="stat-n y">NG</div>
+          <div class="stat-l">Based in Lagos 🇳🇬</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+ 
+<hr class="div">
+ 
+<!-- ── CONTACT ── -->
+<div class="wrap">
+  <section id="contact">
+    <div class="contact-box reveal">
+      <div>
+        <div class="ct-title">Let's build something together.</div>
+        <div class="ct-sub">
+          Whether you need a website, a web app, or just want to talk tech —
+          I'm a message away. Fast response. Serious work.
+        </div>
+        <div class="ct-btns">
+          <a href="mailto:ochukoakporue@email.com" class="btn-p" style="display:inline-flex">
+            <i class="ti ti-mail"></i> Send me an email
+          </a>
+          <button class="btn-resume" onclick="downloadResume()">
+            <i class="ti ti-download"></i> Download CV
+          </button>
+        </div>
+      </div>
+      <div class="ct-links">
+        <a href="mailto:ochukoakporue@email.com" class="cl">
+          <i class="ti ti-mail cl-icon"></i>
+          <div><div class="cl-lbl">Email</div><div class="cl-val">ochukoakporue@email.com</div></div>
+        </a>
+        <a href="https://github.com/yourusername" class="cl" target="_blank" rel="noopener">
+          <i class="ti ti-brand-github cl-icon"></i>
+          <div><div class="cl-lbl">GitHub</div><div class="cl-val">github.com/dagreat</div></div>
+        </a>
+        <a href="https://linkedin.com/in/yourusername" class="cl" target="_blank" rel="noopener">
+          <i class="ti ti-brand-linkedin cl-icon"></i>
+          <div><div class="cl-lbl">LinkedIn</div><div class="cl-val">linkedin.com/in/dagreat</div></div>
+        </a>
+        <a href="https://wa.me/2349031789469" class="cl" target="_blank" rel="noopener">
+          <i class="ti ti-brand-whatsapp cl-icon" style="color:var(--accent2)"></i>
+          <div><div class="cl-lbl">WhatsApp</div><div class="cl-val">+2349031789469</div></div>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+ 
+<div class="wrap">
+  <footer>
+    <span class="fl">Coder.DAGREAT</span>
+    <span>Designed &amp; built in Delta, Nigeria — 2025</span>
+    <span style="display:flex;gap:14px">
+      <a href="https://github.com/ChukzzyDagreat" style="color:var(--muted);font-size:18px" target="_blank"><i class="ti ti-brand-github"></i></a>
+      <a href="https://www.linkedin.com/in/ochuko-akporue-7ab342380" style="color:var(--muted);font-size:18px" target="_blank"><i class="ti ti-brand-linkedin"></i></a>
+      <a href="https://twitter.com/yourusername" style="color:var(--muted);font-size:18px" target="_blank"><i class="ti ti-brand-x"></i></a>
+    </span>
+  </footer>
+</div>
+ 
+
+<script src="script.js"></script>
+</body>
+</html>
