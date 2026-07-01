@@ -112,7 +112,7 @@ hr.div{border:none;border-top:1px solid var(--border)}
 /* ── SECTIONS ── */
 section{padding:68px 0}
 .sec-label{
-  font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;
+  font-family:'JetBrains Mono',monospace;font-size:14px;letter-spacing:2px;
   text-transform:uppercase;color:var(--accent2);margin-bottom:8px;
 }
 .sec-title{font-size:28px;font-weight:600;margin-bottom:40px}
