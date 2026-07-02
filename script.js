@@ -59,7 +59,7 @@ Laptop Reseller (Self-employed) — 2023–Present
  
 CONTACT
 -------
-your@email.com | +234 — — — — — —
+ochukoakporue@email.com | +234 9031789469
 `;
   const blob = new Blob([content], {type:'text/plain'});
   const url = URL.createObjectURL(blob);
