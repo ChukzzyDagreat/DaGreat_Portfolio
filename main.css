@@ -55,9 +55,16 @@ nav{
 }
 .bgImage{
   width:100%;height:100%;border-radius:14px;
-  background: url('./images/me.png') center no-repeat;
   mask-image: radial-gradient( var(--bg) -70%, var(--bg) -70%, transparent 75%);
-  position: absolute;top:0;right:0;bottom:0;left:0;z-index:-1;
+  position: absolute;right:0;bottom:0;left:0;z-index:-1;
+  overflow:hidden;transition:mask-image .3s;
+}
+.bgImage::before{
+  content:'';position:absolute;top:0;left:0;width:100%;height:100%;
+  background:radial-gradient(transparent,var(--bg) 70%);
+}
+.bgImage img{
+  width:100%;max-width: 80em;height:100%;object-fit:cover;border-radius:14px; margin:0 auto;display:block;
 }
 .eyebrow{
   font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;
@@ -75,9 +82,9 @@ h1 .a2{color:var(--accent2)}
   border-radius:8px;font-size:14px;font-weight:500;transition:opacity .2s;
   display:inline-flex;align-items:center;gap:7px;
 }
-.btn-p:hover{opacity:.84}
+.btn-p:hover{opacity:.84;backdrop-filter:blur(12px)}
 .btn-g{
-  padding:12px 24px;background:transparent;color:var(--text);
+  padding:12px 24px;background:transparent;color:var(--text);backdrop-filter:blur(12px);
   border:1px solid var(--border);border-radius:8px;font-size:14px;font-weight:500;
   transition:border-color .2s;display:inline-flex;align-items:center;gap:7px;
 }
@@ -172,8 +179,10 @@ section{padding:68px 0}
 .pl.dim{color:var(--muted)}
  
 /* ── ABOUT ── */
-.about-grid{display:grid;grid-template-columns:1fr 220px;gap:48px;align-items:start}
-.about-body{font-size:15px;color:var(--muted);line-height:1.85}
+#about{background:url('/images/me-in-car.png') 20% 20% no-repeat;background-size:cover;position:relative;border-radius:14px;overflow:hidden}
+#about::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(transparent,var(--bg) 70%)}
+.about-grid{margin-top: 15%;display:grid;grid-template-columns:1fr 220px;gap:48px;align-items:start}
+.about-body{ont-size:15px;line-height:1.85;background:var(--card-fade);border:1px solid var(--border);border-radius:12px;padding:28px; backdrop-filter:blur(20px)}
 .about-body p{margin-bottom:16px}
 .about-body strong{color:var(--text)}
 .about-body .hi{color:var(--accent2)}
@@ -246,6 +255,15 @@ footer{
   .stat-col{grid-template-columns:1fr 1fr}
   nav .nav-links{display:none}
   .contact-box{padding:24px}
+  .bgImage{
+  mask-image: radial-gradient( var(--bg) -70%, var(--bg) -70%, transparent 120%);
+}
+#about{background:url('/images/me-in-car.png') 20% 30% no-repeat;background-size:cover}
+
+}
+/* TABLET */
+@media(max-width:900px){
+  h1{font-size:46px}
   .bgImage{
   mask-image: radial-gradient( var(--bg) -70%, var(--bg) -70%, transparent 120%);
   
