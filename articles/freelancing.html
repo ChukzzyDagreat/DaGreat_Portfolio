@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Freelancing as a CS student in Lagos — DÄGRÊÄT</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0A0A0F;--surface:#12121A;--surface2:#1C1C28;--border:#2A2A3D;--accent:#6C63FF;--accent2:#00D9A3;--text:#F0EFF8;--muted:#8886A0;--code:#FFB347}
+[data-theme="light"]{--bg:#F4F4F8;--surface:#FFFFFF;--surface2:#EEEEF5;--border:#DDDDE8;--accent:#5B52E0;--accent2:#009E78;--text:#1A1A2E;--muted:#6B6B85;--code:#C47300}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Space Grotesk',sans-serif;line-height:1.7;transition:background .3s,color .3s}
+a{color:var(--accent2);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:720px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:100;background:rgba(10,10,15,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:14px 0;transition:background .3s}
+[data-theme="light"] nav{background:rgba(244,244,248,0.92)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--accent2)}
+.logo span{color:var(--muted)}
+.nav-right{display:flex;align-items:center;gap:12px}
+.back-link{font-size:13px;color:var(--muted);transition:color .2s}
+.back-link:hover{color:var(--text);text-decoration:none}
+.theme-btn{width:34px;height:34px;border-radius:7px;border:1px solid var(--border);background:var(--surface);color:var(--muted);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:15px;transition:all .2s}
+.theme-btn:hover{border-color:var(--accent);color:var(--accent)}
+.article-hero{padding:56px 0 40px;border-bottom:1px solid var(--border);margin-bottom:44px}
+.article-meta{display:flex;align-items:center;gap:12px;margin-bottom:20px;flex-wrap:wrap}
+.meta-cat{font-size:11px;font-family:'JetBrains Mono',monospace;letter-spacing:1.5px;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:rgba(0,217,163,.1);color:var(--accent2);border:1px solid rgba(0,217,163,.2)}
+.meta-date{font-size:12px;color:var(--muted);font-family:'JetBrains Mono',monospace}
+.meta-read{font-size:12px;color:var(--muted);font-family:'JetBrains Mono',monospace}
+.meta-dot{color:var(--border)}
+h1.article-title{font-size:36px;font-weight:700;line-height:1.2;margin-bottom:16px}
+.article-subtitle{font-size:17px;color:var(--muted);line-height:1.7}
+.article-body{padding-bottom:60px}
+.article-body h2{font-size:22px;font-weight:600;margin:40px 0 14px;color:var(--text)}
+.article-body h3{font-size:17px;font-weight:600;margin:28px 0 10px;color:var(--accent2)}
+.article-body p{font-size:16px;color:var(--muted);line-height:1.85;margin-bottom:18px}
+.article-body p strong{color:var(--text)}
+.article-body ul,.article-body ol{padding-left:22px;margin-bottom:18px}
+.article-body li{font-size:16px;color:var(--muted);line-height:1.8;margin-bottom:8px}
+.article-body li strong{color:var(--text)}
+.callout{background:var(--surface);border-left:3px solid var(--accent2);border-radius:0 10px 10px 0;padding:18px 20px;margin:24px 0}
+.callout p{margin:0;font-size:15px}
+.callout.warn{border-left-color:var(--code)}
+.callout.purple{border-left-color:var(--accent)}
+.divider{border:none;border-top:1px solid var(--border);margin:40px 0}
+.number-block{display:flex;gap:16px;margin-bottom:24px;align-items:flex-start}
+.number-circle{width:36px;height:36px;border-radius:50%;background:rgba(108,99,255,.15);border:1px solid var(--accent);color:var(--accent);font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.number-content h3{font-size:16px;font-weight:600;color:var(--text);margin-bottom:6px}
+.number-content p{font-size:15px;color:var(--muted);line-height:1.75;margin:0}
+.article-footer{border-top:1px solid var(--border);padding-top:32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.author{display:flex;align-items:center;gap:14px}
+.author-avatar{width:46px;height:46px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;color:#fff;flex-shrink:0;border:2px solid var(--border)}
+.author-name{font-size:14px;font-weight:600}
+.author-role{font-size:12px;color:var(--muted)}
+.btn-back{padding:10px 20px;border:1px solid var(--border);border-radius:8px;font-size:13px;color:var(--muted);transition:all .2s;font-family:'Space Grotesk',sans-serif;background:transparent;cursor:pointer}
+.btn-back:hover{border-color:var(--accent);color:var(--accent)}
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <div class="nav-inner">
+      <div class="logo"><span>//</span> DÄGRÊÄT<span>.dev</span></div>
+      <div class="nav-right">
+        <a href="index.html" class="back-link">← Back to portfolio</a>
+        <button class="theme-btn" id="themeBtn">☀</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="article-hero">
+    <div class="article-meta">
+      <span class="meta-cat">Career</span>
+      <span class="meta-dot">·</span>
+      <span class="meta-date">May 2025</span>
+      <span class="meta-dot">·</span>
+      <span class="meta-read">7 min read</span>
+    </div>
+    <h1 class="article-title">Freelancing as a CS student in Lagos: what nobody tells you</h1>
+    <p class="article-subtitle">The reality of landing your first client, setting prices in Naira, and building credibility before you even graduate.</p>
+  </div>
+
+  <div class="article-body">
+
+    <p>Everyone tells you to "start freelancing" like it's as simple as putting up a profile and watching the money come in. Nobody talks about the part where you send twenty proposals and hear nothing. Nobody talks about the client who asks you to build a full e-commerce site for ₦20,000. Nobody talks about how to explain your value to someone who thinks a website is a one-hour job.</p>
+
+    <p>This is that article. The honest one.</p>
+
+    <h2>The Lagos context matters</h2>
+
+    <p>Freelancing advice from YouTube or Twitter is mostly written for people with dollar bank accounts, PayPal access, and clients in the US or UK. That's not our reality. In Lagos, you're navigating Naira pricing, clients who don't fully understand what they're buying, and a market that often undervalues tech work.</p>
+
+    <p>That doesn't mean you can't build a real freelance income here. It means you have to be smarter about it. <strong>Your first clients will almost certainly be Nigerian businesses</strong> — local small businesses, startups, and students — and understanding that market is your edge.</p>
+
+    <h2>Getting your first client (before you feel "ready")</h2>
+
+    <p>The biggest trap is waiting until you feel ready. You will never feel ready. Here's what actually works:</p>
+
+    <div class="number-block">
+      <div class="number-circle">1</div>
+      <div class="number-content">
+        <h3>Start with your immediate circle</h3>
+        <p>Your first client is probably someone you already know. A family member's business that has no website. A classmate's startup. A church that needs a landing page. These are low-pressure projects that build your portfolio without requiring you to cold pitch strangers.</p>
+      </div>
+    </div>
+
+    <div class="number-block">
+      <div class="number-circle">2</div>
+      <div class="number-content">
+        <h3>Build something real first</h3>
+        <p>Before you pitch anyone, build one or two projects on your own — even if nobody hired you for them. A portfolio without projects is just a page with your name on it. Projects are proof. Even a simple landing page you built for a fictional business shows more than a blank portfolio.</p>
+      </div>
+    </div>
+
+    <div class="number-block">
+      <div class="number-circle">3</div>
+      <div class="number-content">
+        <h3>Use WhatsApp, not just LinkedIn</h3>
+        <p>In Lagos, deals happen on WhatsApp. Business owners are on WhatsApp. Your most effective marketing is a well-crafted status update showing your work, a clean portfolio link, and word of mouth. Don't overlook this because it doesn't feel "professional" enough.</p>
+      </div>
+    </div>
+
+    <div class="number-block">
+      <div class="number-circle">4</div>
+      <div class="number-content">
+        <h3>Join dev communities</h3>
+        <p>The Lagos tech community is genuinely supportive. Communities like DevCareers, She Code Africa, and local Twitter (now X) tech circles regularly share referrals and opportunities. Being visible and helpful in these spaces will return value.</p>
+      </div>
+    </div>
+
+    <h2>Pricing in Naira without underselling yourself</h2>
+
+    <p>This is where most beginners get it wrong. They look at what they can do, panic about not being "good enough", and charge ₦15,000 for a project that took them three days. That's not sustainable — and it sets a bad precedent with your client.</p>
+
+    <div class="callout warn">
+      <p><strong>Rough pricing guide for Nigerian freelance web dev (2025):</strong><br><br>
+      Landing page (1–3 pages): ₦40,000 – ₦120,000<br>
+      Business website (5+ pages): ₦120,000 – ₦350,000<br>
+      E-commerce / web app: ₦250,000 – ₦800,000+<br>
+      Monthly maintenance: ₦15,000 – ₦50,000/month</p>
+    </div>
+
+    <p>These are ranges, not fixed prices. Your level, the client's budget, and the complexity of the work all affect the number. But know your floor — the minimum below which the work isn't worth your time — and don't go below it, even for "exposure".</p>
+
+    <h3>Charge for your time, not just your skill</h3>
+    <p>A beginner who spends 20 hours building a website and charges ₦10,000 is earning ₦500 per hour. That's below minimum wage. Track how long projects actually take you — you'll often find you've massively underpriced yourself.</p>
+
+    <h2>Building credibility before you graduate</h2>
+
+    <p>Clients don't care about your CGPA. They care about whether you can deliver. Here's how you build that proof early:</p>
+
+    <ul>
+      <li><strong>Deliver exactly what you promised, on time.</strong> This sounds obvious. It's not common. Doing this once will get you a referral.</li>
+      <li><strong>Document your projects.</strong> Before and after screenshots, a short description of the problem you solved, and the tech you used. This becomes your portfolio.</li>
+      <li><strong>Collect testimonials actively.</strong> After a successful project, ask your client for a short written review. Most people won't volunteer this — you have to ask.</li>
+      <li><strong>Write online.</strong> A blog post, a Twitter thread, a LinkedIn article — even one piece of writing that shows you understand web development makes you more credible than 99% of people at your level.</li>
+      <li><strong>Build in public.</strong> Share what you're working on, what you're learning, what you've finished. People hire people they've seen doing the work.</li>
+    </ul>
+
+    <h2>The mindset shift that changes everything</h2>
+
+    <p>Freelancing as a student feels like a hustle on top of a hustle. You're managing coursework, exams, and client deadlines simultaneously. The shift that made this sustainable for me was treating it like a business, not a favour.</p>
+
+    <p>When you treat it like a favour — doing cheap work for people who "can't afford more" — you burn out and resent it. When you treat it like a business — setting real prices, writing proper agreements, managing client expectations — it becomes something you can actually grow.</p>
+
+    <div class="callout purple">
+      <p><strong>One practical tip:</strong> Always take a deposit before starting work. 50% upfront is standard. Anyone who refuses to pay a deposit before you've done any work is telling you exactly how the rest of the project will go.</p>
+    </div>
+
+    <h2>It's harder than the influencers make it look — and worth it anyway</h2>
+
+    <p>Freelancing as a CS student in Lagos will test your patience. You'll have clients who ghost you after you deliver work. You'll undercharge on your first few projects. You'll have a semester where exams clash with a deadline and you'll wonder why you bothered.</p>
+
+    <p>But you'll also build real skills faster than anyone learning in a classroom alone. You'll learn to communicate technical ideas to non-technical people. You'll build a portfolio that proves your ability. And you'll have income that most of your coursemates don't.</p>
+
+    <p>Start before you're ready. Charge more than feels comfortable. Deliver better than expected. That's the whole formula.</p>
+
+    <hr class="divider">
+
+    <div class="article-footer">
+      <div class="author">
+        <div class="author-avatar">DG</div>
+        <div>
+          <div class="author-name">DÄGRÊÄT</div>
+          <div class="author-role">Web Developer · Lagos, Nigeria</div>
+        </div>
+      </div>
+      <button class="btn-back" onclick="history.back()">← Back to articles</button>
+    </div>
+  </div>
+</div>
+<script>
+const html=document.documentElement;const btn=document.getElementById('themeBtn');
+const t=localStorage.getItem('portfolio_theme')||'dark';
+html.setAttribute('data-theme',t);btn.textContent=t==='dark'?'☀':'☾';
+btn.addEventListener('click',()=>{const n=html.getAttribute('data-theme')==='dark'?'light':'dark';html.setAttribute('data-theme',n);localStorage.setItem('portfolio_theme',n);btn.textContent=n==='dark'?'☀':'☾';});
+</script>
+</body>
+</html>
