@@ -4,12 +4,12 @@
 :root{
   --bg:#0A0A0F;--card-fade: #12121a7e;--surface:#12121A;--surface2:#1C1C28;--border:#2A2A3D;
   --accent:#6C63FF;--accent2:#00D9A3;--text:#F0EFF8;--muted:#8886A0;--code:#FFB347;
-  --shadow:0 4px 24px rgba(0,0,0,0.4);
+  --shadow:0 4px 24px rgba(0,0,0,0.4);--imageBg: #2b240d;
 }
 [data-theme="light"]{
   --bg:#F4F4F8;--card-fade: #12121a00;--surface:#FFFFFF;--surface2:#EEEEF5;--border:#DDDDE8;
   --accent:#5B52E0;--accent2:#009E78;--text:#1A1A2E;--muted:#6B6B85;--code:#C47300;
-  --shadow:0 4px 24px rgba(0,0,0,0.08);
+  --shadow:0 4px 24px rgba(0,0,0,0.08);--imageBg: #ffeaca;
 }
  
 html{scroll-behavior:smooth}
@@ -55,7 +55,7 @@ nav{
 }
 .bgImage{
   width:100%;height:100%;border-radius:14px;
-  background: #2b240d;
+  background:var(--imageBg);
   position: absolute;right:0;bottom:0;left:0;z-index:-1;
   overflow:hidden;transition:mask-image .3s;
 }
