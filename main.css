@@ -16,7 +16,7 @@ html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:'Space Grotesk',sans-serif;line-height:1.6;transition:background .3s,color .3s}
 a{color:inherit;text-decoration:none}
  
-.wrap{max-width:900px;margin:0 auto;padding:0 24px}
+.wrap{max-width:1300px;margin:0 auto;padding:0 24px}
  
 /* ── NAV ── */
 nav{
@@ -52,6 +52,12 @@ nav{
 .hero{
   display:grid;grid-template-columns:1fr 370px;gap:48px;
   align-items:center;padding:88px 0 68px;
+}
+.bgImage{
+  width:100%;height:100%;border-radius:14px;
+  background: url(/images/me.png)center no-repeat;
+  mask-image: radial-gradient( var(--bg) -70%, var(--bg) -70%, transparent 75%);
+  position: absolute;top:0;right:0;bottom:0;left:0;z-index:-1;
 }
 .eyebrow{
   font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;
@@ -240,4 +246,8 @@ footer{
   .stat-col{grid-template-columns:1fr 1fr}
   nav .nav-links{display:none}
   .contact-box{padding:24px}
+  .bgImage{
+  mask-image: radial-gradient( var(--bg) -70%, var(--bg) -70%, transparent 120%);
+  
+}
 }
