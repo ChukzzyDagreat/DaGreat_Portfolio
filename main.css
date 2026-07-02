@@ -182,7 +182,18 @@ section{padding:68px 0}
 #about{background:url('/images/me-in-car.png') 20% 20% no-repeat;background-size:cover;position:relative;border-radius:14px;overflow:hidden}
 #about::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(transparent,var(--bg) 70%)}
 .about-grid{margin-top: 15%;display:grid;grid-template-columns:1fr 220px;gap:48px;align-items:start}
-.about-body{ont-size:15px;line-height:1.85;background:var(--card-fade);border:1px solid var(--border);border-radius:12px;padding:28px; backdrop-filter:blur(20px)}
+.about-body{font-size:15px;line-height:1.85;background:var(--card-fade);border:1px solid var(--border);border-radius:12px;padding:28px; backdrop-filter:blur(20px)}
+#about{
+  background-color: var(--surface);
+  background-image: linear-gradient(120deg, rgba(5,8,18,.78), rgba(5,8,18,.3)), url('./images/me-in-car.png');
+  background-position: 20% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+  border-radius:14px;
+  overflow:hidden;
+}
+#about::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(transparent,var(--bg) 70%)}
 .about-body p{margin-bottom:16px}
 .about-body strong{color:var(--text)}
 .about-body .hi{color:var(--accent2)}
@@ -257,7 +268,7 @@ footer{
   .bgImage{
   mask-image: radial-gradient( var(--bg) -70%, var(--bg) -70%, transparent 120%);
 }
-#about{background:url('/images/me-in-car.png') 20% 30% no-repeat;background-size:cover}
+  #about{background-image: linear-gradient(120deg, rgba(5,8,18,.78), rgba(5,8,18,.3)), url('./images/me-in-car.png');background-position:20% 30%;background-repeat:no-repeat;background-size:cover}
 
 }
 /* TABLET */
