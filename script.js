@@ -27,19 +27,19 @@ reveals.forEach(el => observer.observe(el));
 function downloadResume(){
   // Generates a simple placeholder resume as a text file.
   // Replace this with a real PDF link: window.open('resume.pdf', '_blank');
-  const content = `DÄGRÊÄT — Web Developer Resume
+  const content = `Coder.DAGREAT — Web Developer Resume
 ================================
-Location: Lagos, Nigeria
-Email: your@email.com
-GitHub: github.com/dagreat
-LinkedIn: linkedin.com/in/dagreat
+Location: Delta, Nigeria
+Email: ochukoakporue@email.com
+GitHub: github.com/ChukzzyDagreat
+LinkedIn: linkedin.com/in/ochuko-akporue
  
 SKILLS
 ------
-Frontend: HTML5, CSS3, JavaScript, React, Tailwind CSS
-Backend: Node.js, Express, REST APIs, Java
+Frontend: HTML5, CSS3, JavaScript, React, Next.js, Tailwind CSS
+Backend: Node.js,REST APIs, Java
 Database: MongoDB, MySQL
-Tools: Git, Linux (Zorin OS), Figma
+Tools: Git, Linux, Figma
  
 PROJECTS
 --------
@@ -50,12 +50,12 @@ PROJECTS
  
 EDUCATION
 ---------
-B.Sc. Computer Science — [Your University], Lagos (In progress)
+B.Sc. Computer Science — Delta State University,Abraka , Delta (In progress)
  
 EXPERIENCE
 ----------
-Laptop Reseller (Self-employed) — 2023–Present
-  Sourcing, pricing, and selling laptops to university students in Lagos.
+Laptop Reseller (Self-employed) — 2025–Present
+  Sourcing, pricing, and selling laptops to university students in Delta (Delsu).
  
 CONTACT
 -------
@@ -64,7 +64,7 @@ ochukoakporue@email.com | +234 9031789469
   const blob = new Blob([content], {type:'text/plain'});
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
-  a.href = url; a.download = 'DAGREAT_Resume.txt';
+  a.href = url; a.download = 'DAGREAT_Resume.docx';
   document.body.appendChild(a); a.click();
   document.body.removeChild(a); URL.revokeObjectURL(url);
 }
