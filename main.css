@@ -245,7 +245,7 @@ footer{
   display:block;
 }
 .nav-links .closeBtn{display:block; width:36px;height:36px;border: 1px solid var(--border);border-radius:8px;display:flex;align-items:center;justify-content:center;margin:-2.5% 10px;margin-bottom:1em;cursor:pointer}
-.nav-links li{padding: 2.5% 0; width:95%; border-radius: 8px;margin: 0 auto;transition:.2s;cursor:pointer}
+.nav-links li{padding: 2.5% 0; width:95%; border-radius: 8px;margin: auto;transition:.2s;cursor:pointer}
 .nav-links li:hover{background:var(--surface2)}
 }
 /* TABLET */
