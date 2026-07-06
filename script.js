@@ -13,6 +13,18 @@ function setTheme(t){
 btn.addEventListener('click', () => {
   setTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
 });
+
+//Nav opening and close
+const openNav = document.getElementById('openNav');
+const closeNav = document.getElementById('closeNav');
+const navLinks = document.getElementById('navLinks');
+
+openNav.addEventListener('click', ()=>{
+  navLinks.style.display = 'flex';
+})
+closeNav.addEventListener('click', ()=>{
+  navLinks.style.display = 'none';
+})
  
 /* ── SCROLL REVEAL ── */
 const reveals = document.querySelectorAll('.reveal');
@@ -20,7 +32,7 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if(e.isIntersecting){ e.target.classList.add('visible'); observer.unobserve(e.target); }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.2 });
 reveals.forEach(el => observer.observe(el));
  
 /* ── RESUME DOWNLOAD ── */

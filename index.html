@@ -17,7 +17,8 @@
   <div class="wrap">
     <div class="nav-inner">
       <div class="logo">DaGreat</div>
-      <ul class="nav-links">
+      <ul class="nav-links" id="navLinks">
+        <li class="closeBtn" id="closeNav">&times;</li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#about">About</a></li>
@@ -28,6 +29,9 @@
           <i class="ti ti-sun" id="themeIcon"></i>
         </button>
         <a href="#contact" class="nav-cta">Hire me</a>
+        <button class="menuBtn" id="themeToggle" title="Toggle theme" aria-label="Toggle light/dark mode">
+          <span id="openNav">&equiv;</span>
+        </button>
       </div>
     </div>
   </div>
@@ -298,7 +302,7 @@
  
 <div class="wrap">
   <footer>
-    <span class="fl">Coder.DAGREAT</span>
+    <span class="fl">DaGreat</span>
     <span>Designed &amp; built in Delta, Nigeria — 2026</span>
     <span style="display:flex;gap:14px">
       <a href="https://github.com/ChukzzyDagreat" style="color:var(--muted);font-size:18px" target="_blank"><i class="ti ti-brand-github"></i></a>
