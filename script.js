@@ -39,7 +39,7 @@ reveals.forEach(el => observer.observe(el));
 function downloadResume(){
   // Generates a simple placeholder resume as a text file.
   // Replace this with a real PDF link: window.open('resume.pdf', '_blank');
-  const content = `Coder.DAGREAT — Web Developer Resume
+  const content = `DAGREAT — Web Developer Resume
 ================================
 Location: Delta, Nigeria
 Email: ochukoakporue@email.com
@@ -55,9 +55,10 @@ Tools: Git, Linux, Figma
  
 PROJECTS
 --------
-• Student CGPA Calculator — React, Tailwind, LocalStorage
+• Student CGPA Calculator — html, Tailwind, JavaScript, LocalStorage
 • Laptop Store Landing Page — HTML, CSS, Vanilla JS
 • Student Info Manager — Java, OOP, CLI
+• Royal Chosen International Ministries (in progress) — NextJS. Tailwind, API, PostgreSQL
 • Portfolio — HTML, CSS, Vanilla JS
  
 EDUCATION
@@ -66,12 +67,13 @@ B.Sc. Computer Science — Delta State University,Abraka , Delta (In progress)
  
 EXPERIENCE
 ----------
-Laptop Reseller (Self-employed) — 2025–Present
-  Sourcing, pricing, and selling laptops to university students in Delta (Delsu).
+Laptop Seller (Self-employed) — 2025–Present
+  Sourcing, pricing, and selling laptops in Delta and most especially University students of Delta State University, Abraka (Delsu).
  
 CONTACT
 -------
-ochukoakporue@email.com | +234 9031789469
+Email: ochukoakporue@email.com
+Tel: +234 9031789469
 `;
   const blob = new Blob([content], {type:'text/plain'});
   const url = URL.createObjectURL(blob);

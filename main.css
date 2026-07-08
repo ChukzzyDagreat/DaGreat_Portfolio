@@ -236,7 +236,6 @@ footer{
 /* ── MOBILE ── */
 @media(max-width:780px){
   .hero{grid-template-columns:1fr}
-  .code-card{margin-top:60%}
   h1{font-size:60px}
   .proj-grid,.about-grid,.contact-box,.blog-grid{grid-template-columns:1fr}
   .stat-col{grid-template-columns:1fr 1fr}
@@ -251,7 +250,7 @@ footer{
 .nav-links li{padding: 2.5% 0; width:95%; border-radius: 8px;margin:-.5em auto;transition:.2s;cursor:pointer}
 .nav-links li:hover{background:var(--surface2)}
 
-.bgImage2 img{width: 100%; max-width:unset;margin-top:-10%;}
+.bgImage2 ,.bgImage{display:none}
 
 }
 /* TABLET */
