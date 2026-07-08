@@ -188,6 +188,7 @@ section{padding:68px 0}
 /* ── ABOUT ── */
 .about-grid{margin-top: 15%;display:grid;grid-template-columns:1fr 220px;gap:48px;align-items:start}
 .about-body{font-size:15px;line-height:1.85;background:var(--card-fade);border:1px solid var(--border);border-radius:12px;padding:28px; backdrop-filter:blur(20px)}
+.about-body:hover{border-color:var(--accent)}
 #about{
   postion:relative;
   border-radius:14px;
