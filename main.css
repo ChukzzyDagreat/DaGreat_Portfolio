@@ -32,7 +32,7 @@ transition:background .3s;margin: 0auto;
 .nav-links{display:flex;gap:24px;list-style:none}
 .nav-links a{font-size:14px;color:var(--muted);transition:color .2s}
 .nav-links a:hover{color:var(--text)}
-.mobile-nav{display:none}
+.mobileNav{display:none}
   
 .nav-right{display:flex;align-items:center;gap:10px}
 
