@@ -16,14 +16,20 @@ btn.addEventListener('click', () => {
 
 //Nav opening and close
 const openNav = document.getElementById('openNav');
-const closeNav = document.getElementById('closeNav');
-const navLinks = document.getElementById('navLinks');
+const navLinks = document.getElementById('mobileLinks');
+const navBG = document.getElementById('navBg');
 
 openNav.addEventListener('click', ()=>{
-  navLinks.style.display = 'flex';
+  navLinks.style.display = 'block';
+  navBG.style.display = 'flex';
 })
-closeNav.addEventListener('click', ()=>{
+navLinks.addEventListener('click', ()=>{
   navLinks.style.display = 'none';
+  navBG.style.display = 'none';
+})
+navBG.addEventListener('click', ()=>{
+  navLinks.style.display = 'none';
+  navBG.style.display = 'none';
 })
  
 /* ── SCROLL REVEAL ── */
