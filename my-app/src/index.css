@@ -16,4 +16,4 @@ html{scroll-behavior:smooth}
 body{width:100%;background:var(--bg);color:var(--text);font-family:'Space Grotesk',sans-serif;line-height:1.6;transition:background .3s,color .3s}
 a{color:inherit;text-decoration:none}
  
-.wrap{max-width:1400px;margin:0 auto;padding:0 24px;position:relative;background:re;}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px;position:relative;background:re;}
